@@ -1,0 +1,16 @@
+install dependency
+
+1) npm i electron
+2) npm i concurrently
+3) npm i wait-on
+
+create main.js file outside src folder
+
+edit package.json file
+
+1) add this line  "main": "main.js" before script.
+2) add this line inside script "electron": "concurrently \"SET BROWSER=none&&npm run start\" \"wait-on http://localhost:3000 && electron .\""
+
+now hurry up! let we start 
+
+run this command : npm run electron
